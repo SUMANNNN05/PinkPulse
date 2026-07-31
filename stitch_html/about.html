@@ -1,0 +1,312 @@
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#65394b",
+                        "on-primary-fixed": "#3e0020",
+                        "background": "#f8fafb",
+                        "secondary-fixed-dim": "#f2b6cb",
+                        "surface-dim": "#d8dadb",
+                        "surface-variant": "#e1e3e4",
+                        "tertiary": "#1e333c",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#354a53",
+                        "secondary-fixed": "#ffd9e4",
+                        "on-surface": "#191c1d",
+                        "on-tertiary-fixed": "#071e27",
+                        "tertiary-fixed": "#cfe6f2",
+                        "surface-container-low": "#f2f4f5",
+                        "on-secondary-fixed": "#330f1f",
+                        "surface-container": "#eceeef",
+                        "surface-bright": "#f8fafb",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#a1b8c3",
+                        "on-secondary-container": "#7b4c5e",
+                        "surface-container-high": "#e6e8e9",
+                        "primary-container": "#880e4f",
+                        "inverse-on-surface": "#eff1f2",
+                        "inverse-primary": "#ffb0cc",
+                        "on-secondary": "#ffffff",
+                        "surface": "#f8fafb",
+                        "primary-fixed-dim": "#ffb0cc",
+                        "tertiary-fixed-dim": "#b4cad6",
+                        "primary-fixed": "#ffd9e4",
+                        "on-background": "#191c1d",
+                        "secondary": "#805062",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#2e3132",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-surface-variant": "#564148",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#fec1d6",
+                        "on-primary-container": "#ff93bc",
+                        "surface-tint": "#a82d68",
+                        "on-primary-fixed-variant": "#890f50",
+                        "tertiary-container": "#344953",
+                        "outline": "#897178",
+                        "primary": "#630037",
+                        "outline-variant": "#dcbfc7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin_mobile": "16px",
+                        "margin_desktop": "40px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "container_max": "1440px",
+                        "sidebar_width": "280px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "body-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Inter"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "headline-sm": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    },
+                    boxShadow: {
+                        'clinical': '0px 4px 20px rgba(136, 14, 79, 0.05)',
+                        'floating': '0px 12px 30px rgba(136, 14, 79, 0.1)',
+                    }
+                }
+            }
+        }
+    }catch(_e){}</script></head><body class="bg-surface text-on-surface font-body-md font-sans antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex">
+
+    <!-- SideNavBar -->
+    <aside class="hidden md:flex flex-col fixed left-0 top-0 h-full w-sidebar_width bg-surface dark:bg-inverse-surface border-r border-outline-variant dark:border-on-surface-variant z-50">
+        <!-- Header -->
+        <div class="flex items-center gap-4 py-6 px-6">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRyshHQE_muzcYhulg84zUege6Wl-7k4A_N3c8AlhiE2RMWtKoXdiLUQ3LuJjy3EVBvWeS4avWZaT4ykrb64R9sMECy2JuEjfPX97WYwLo9UkRpPWVV8zGKZoRNT3tqpiJvR5E7jiVvpzpeEY6xtdLuy5mHQiCcimxZSPMVIW_ilAAInp-SVgw-D4yk8490G9EhcTWr_rQ5ZYsA45Mtcdl0SJhnagl_Ps6tJ3FXq0pafy4vQn3FC-Ed0NFXx0CEuj1jnjSqVQIPKds" alt="PinkPulse Logo" class="w-10 h-10 object-contain rounded-lg">
+            <div>
+                <h1 class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed-dim">PinkPulse AI</h1>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Clinical Diagnostics</p>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="px-4 mb-6">
+            <button class="w-full bg-primary-container text-on-primary font-label-md text-label-md py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-primary transition-colors">
+                <span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">add</span>
+                Start New Scan
+            </button>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <nav class="flex-1 flex flex-col gap-1 overflow-y-auto">
+            
+            <a href="#" class="flex items-center gap-3 text-on-surface-variant dark:text-surface-variant py-3 px-6 hover:bg-surface-container-high dark:hover:bg-surface-variant transition-colors font-label-md text-label-md">
+                <span class="material-symbols-outlined">history</span>
+                History
+            </a>
+            
+            
+            
+            
+            
+            
+            
+            <a class="flex items-center gap-3 text-on-surface-variant dark:text-surface-variant py-3 px-6 hover:bg-surface-container-high dark:hover:bg-surface-variant transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">help</span>
+                Help
+            </a>
+            
+        <a href="{{DATA:SCREEN:SCREEN_9}}" class="flex items-center gap-3 bg-secondary-container dark:bg-primary-container text-on-secondary-container dark:text-on-primary-container border-l-4 border-primary rounded-r-lg py-3 px-6 hover:bg-surface-container-high dark:hover:bg-surface-variant transition-colors opacity-80 font-label-md text-label-md">
+<span class="material-symbols-outlined">info</span>
+                About Us
+            </a></nav>
+
+        <!-- Footer -->
+        <div class="mt-auto border-t border-outline-variant p-4"><a href="#" class="flex items-center gap-3 text-on-surface-variant dark:text-surface-variant py-3 px-2 hover:bg-surface-container-high dark:hover:bg-surface-variant transition-colors rounded-lg font-label-md text-label-md">
+                <span class="material-symbols-outlined">account_circle</span>
+                Profile&nbsp;</a></div>
+    </aside>
+
+    <!-- Mobile Top App Bar (Fallback for small screens) -->
+    <header class="md:hidden flex items-center justify-between w-full h-16 px-margin_mobile bg-surface border-b border-outline-variant fixed top-0 z-40">
+        <div class="flex items-center gap-2">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRyshHQE_muzcYhulg84zUege6Wl-7k4A_N3c8AlhiE2RMWtKoXdiLUQ3LuJjy3EVBvWeS4avWZaT4ykrb64R9sMECy2JuEjfPX97WYwLo9UkRpPWVV8zGKZoRNT3tqpiJvR5E7jiVvpzpeEY6xtdLuy5mHQiCcimxZSPMVIW_ilAAInp-SVgw-D4yk8490G9EhcTWr_rQ5ZYsA45Mtcdl0SJhnagl_Ps6tJ3FXq0pafy4vQn3FC-Ed0NFXx0CEuj1jnjSqVQIPKds" alt="PinkPulse Logo" class="w-8 h-8 object-contain">
+            <span class="font-headline-sm text-headline-sm font-bold text-primary">PinkPulse AI</span>
+        </div>
+        <button class="text-on-surface-variant">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+    </header>
+
+    <!-- Main Content Canvas -->
+    <main class="flex-1 md:ml-[280px] pt-16 md:pt-0 min-h-screen bg-background">
+        <div class="max-w-container_max mx-auto px-margin_mobile md:px-margin_desktop py-8 md:py-12 space-y-gutter">
+            
+            <!-- Page Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-outline-variant pb-6">
+                <div>
+                    <h2 class="font-display-lg text-display-lg text-primary">About PinkPulse AI</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mt-2 max-w-2xl">Clinical transparency and technical excellence in AI-assisted diagnostics.</p>
+                </div>
+                <a href="#" class="inline-flex items-center justify-center gap-2 bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md py-2.5 px-6 rounded-lg transition-colors border border-outline-variant">
+                    <span class="material-symbols-outlined text-[18px]">home</span>
+                    Return to Home
+                </a>
+            </div>
+
+            <!-- Bento Grid Content -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                
+                <!-- Dataset Used Card -->
+                <div class="md:col-span-5 bg-surface rounded-xl p-8 card-shadow flex flex-col h-full">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined">database</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-on-surface">Dataset Used</h3>
+                    </div>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-1">
+                        Our models are trained on an extensively curated, diverse clinical dataset comprising over 1.2 million anonymized diagnostic images and corresponding pathology reports. We prioritize geographic, demographic, and technological diversity in our data collection to ensure robust generalization across different clinical settings.
+                    </p>
+                    <ul class="space-y-3 font-body-sm text-body-sm text-on-surface">
+                        <li class="flex items-start gap-2">
+                            <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                            Multi-center sourcing (50+ global institutions)
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                            Rigorous expert annotation (triple-reviewed)
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                            HIPAA and GDPR compliant anonymization
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Why Explainability Matters Card -->
+                <div class="md:col-span-7 bg-surface rounded-xl p-8 card-shadow flex flex-col h-full relative overflow-hidden">
+                    <!-- Subtle background decoration -->
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-primary-fixed opacity-10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
+                    
+                    <div class="flex items-center gap-3 mb-6 relative z-10">
+                        <div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined">visibility</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-on-surface">Why Explainability Matters</h3>
+                    </div>
+                    <div class="prose prose-sm text-on-surface-variant max-w-none relative z-10 font-body-md">
+                        <p class="mb-4">
+                            In clinical diagnostics, a "black box" AI is insufficient. Healthcare professionals must understand <em>why</em> an algorithm reached a specific conclusion to trust its recommendation and integrate it into patient care.
+                        </p>
+                        <p class="">
+                            PinkPulse AI is built on the principle of intrinsic interpretability. We utilize advanced saliency mapping, feature attribution, and logical rule extraction to provide clinicians with visual and textual evidence for every diagnostic suggestion. This transparent approach:
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 relative z-10">
+                        <div class="bg-surface-container-low p-4 rounded-lg border border-surface-container-high">
+                            <h4 class="font-label-md text-label-md text-primary mb-1">Fosters Trust</h4>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant">Builds confidence between the physician and the AI assistant.</p>
+                        </div>
+                        <div class="bg-surface-container-low p-4 rounded-lg border border-surface-container-high">
+                            <h4 class="font-label-md text-label-md text-primary mb-1">Aids Discovery</h4>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant">Highlights subtle patterns that may inform new clinical insights.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Model Pipeline Full Width Card -->
+                <div class="md:col-span-12 bg-surface rounded-xl p-8 card-shadow mt-4">
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary">
+                            <span class="material-symbols-outlined">route</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-on-surface">Model Pipeline</h3>
+                    </div>
+
+                    <!-- Horizontal Pipeline Diagram -->
+                    <div class="relative py-8 overflow-x-auto hide-scrollbar">
+                        <div class="flex items-center justify-between min-w-[800px] relative">
+                            <!-- Connecting Line -->
+                            <div class="absolute top-1/2 left-0 w-full h-1 bg-surface-variant -translate-y-1/2 z-0"></div>
+                            
+                            <!-- Step 1 -->
+                            <div class="relative z-10 flex flex-col items-center group w-48">
+                                <div class="w-16 h-16 rounded-full bg-surface border-4 border-surface-variant flex items-center justify-center mb-4 transition-colors group-hover:border-primary group-hover:bg-primary-fixed shadow-sm">
+                                    <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary text-3xl">upload_file</span>
+                                </div>
+                                <h4 class="font-label-md text-label-md text-on-surface mb-1 text-center">Upload</h4>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant text-center px-2">DICOM/Image ingestion &amp; standardization</p>
+                            </div>
+
+                            <!-- Arrow -->
+                            <span class="material-symbols-outlined text-outline z-10 bg-surface rounded-full px-1">arrow_forward_ios</span>
+
+                            <!-- Step 2 -->
+                            <div class="relative z-10 flex flex-col items-center group w-48">
+                                <div class="w-16 h-16 rounded-full bg-surface border-4 border-surface-variant flex items-center justify-center mb-4 transition-colors group-hover:border-primary group-hover:bg-primary-fixed shadow-sm">
+                                    <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary text-3xl">crop</span>
+                                </div>
+                                <h4 class="font-label-md text-label-md text-on-surface mb-1 text-center">Segmentation</h4>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant text-center px-2">Isolating regions of interest (ROI)</p>
+                            </div>
+
+                            <!-- Arrow -->
+                            <span class="material-symbols-outlined text-outline z-10 bg-surface rounded-full px-1">arrow_forward_ios</span>
+
+                            <!-- Step 3 -->
+                            <div class="relative z-10 flex flex-col items-center group w-48">
+                                <div class="w-16 h-16 rounded-full bg-surface border-4 border-surface-variant flex items-center justify-center mb-4 transition-colors group-hover:border-primary group-hover:bg-primary-fixed shadow-sm">
+                                    <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary text-3xl">category</span>
+                                </div>
+                                <h4 class="font-label-md text-label-md text-on-surface mb-1 text-center">Classification</h4>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant text-center px-2">Deep learning feature extraction</p>
+                            </div>
+
+                            <!-- Arrow -->
+                            <span class="material-symbols-outlined text-outline z-10 bg-surface rounded-full px-1">arrow_forward_ios</span>
+
+                            <!-- Step 4 -->
+                            <div class="relative z-10 flex flex-col items-center group w-48">
+                                <div class="w-16 h-16 rounded-full bg-surface border-4 border-primary flex items-center justify-center mb-4 bg-primary-fixed shadow-md">
+                                    <span class="material-symbols-outlined text-primary text-3xl">highlight</span>
+                                </div>
+                                <h4 class="font-label-md text-label-md text-primary mb-1 text-center">Explainability</h4>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant text-center px-2">Generating heatmaps &amp; rationales</p>
+                            </div>
+
+                            <!-- Arrow -->
+                            <span class="material-symbols-outlined text-outline z-10 bg-surface rounded-full px-1">arrow_forward_ios</span>
+
+                            <!-- Step 5 -->
+                            <div class="relative z-10 flex flex-col items-center group w-48">
+                                <div class="w-16 h-16 rounded-full bg-primary-container border-4 border-primary-container flex items-center justify-center mb-4 shadow-clinical text-on-primary">
+                                    <span class="material-symbols-outlined text-3xl">fact_check</span>
+                                </div>
+                                <h4 class="font-label-md text-label-md text-on-surface mb-1 text-center">Result</h4>
+                                </div></div></div></div></div></div></main>
+
+
+
+
+
+</body></html>
