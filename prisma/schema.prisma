@@ -1,0 +1,77 @@
+// Prisma schema for PinkPulse AI backend
+// Run `npx prisma generate` after cloning to create the type-safe client
+// Run `npx prisma migrate dev --name init` to create the database tables
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  CLINICIAN
+  ADMIN
+}
+
+enum Classification {
+  BENIGN
+  MALIGNANT
+  NORMAL
+}
+
+enum ScanStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  FAILED
+}
+
+model User {
+  id           String        @id @default(uuid())
+  name         String
+  email        String        @unique
+  passwordHash String
+  role         Role          @default(CLINICIAN)
+  scans        Scan[]
+  refreshTokens RefreshToken[]
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+
+  @@map("users")
+}
+
+model Scan {
+  id             String          @id @default(uuid())
+  user           User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId         String
+  imageUrl       String
+  maskUrl        String?
+  heatmapUrl     String?
+  classification Classification?
+  confidence     Float?
+  uncertainty    Float?
+  status         ScanStatus      @default(PENDING)
+  errorMessage   String?
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+
+  // Speeds up "GET /scans" history queries (paginated, newest first, per user)
+  @@index([userId, createdAt])
+  @@map("scans")
+}
+
+model RefreshToken {
+  id        String   @id @default(uuid())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId    String
+  tokenHash String   @unique
+  expiresAt DateTime
+  revoked   Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@map("refresh_tokens")
+}
