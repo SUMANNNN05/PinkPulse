@@ -1,13 +1,12 @@
 import { Router } from "express";
 import healthRoutes from "./health.routes";
 import authRoutes from "./auth.routes";
+import scanRoutes from "./scan.routes";
 
 const router = Router();
 
 router.use("/health", healthRoutes);
 router.use("/auth", authRoutes);
-
-// Milestone 4 will add:
-// router.use("/scans", scanRoutes);
+router.use("/scans", scanRoutes);
 
 export default router;
